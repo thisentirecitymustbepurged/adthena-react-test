@@ -1,0 +1,14 @@
+.todos {
+  padding: 10px;
+  display: flex;
+  &__section {
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__section-title {
+    font-weight: bold;
+    margin: 10px 5px;
+  }
+}

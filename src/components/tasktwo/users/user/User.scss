@@ -1,0 +1,19 @@
+.user {
+  margin-top: -1px;
+  border: 1px solid #ddd;
+  &.collapsed {
+    border: 0
+  }
+  &__info {
+    display: flex;
+    padding: 10px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    &:hover {
+     background-color: rgba(0,0,0,0.1); 
+    }
+    > div {
+      flex: 1
+    }
+  }
+}

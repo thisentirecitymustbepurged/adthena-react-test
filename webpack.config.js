@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
-const environment = process.env.NODE_ENV;
+const environment = 'development';
 const isDevelopment = environment === 'development';
 
 function resolvePath(relativePath) {
@@ -14,16 +14,18 @@ const PATHS = {
   dist: resolvePath('dist'),
   components: resolvePath('src/components'),
   services: resolvePath('src/services'),
+  src: resolvePath('src'),
 };
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   mode: environment,
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       '@components': PATHS.components,
       '@services': PATHS.services,
+      '@': PATHS.src,
     },
   },
   output: {
