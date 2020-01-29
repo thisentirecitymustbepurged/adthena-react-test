@@ -1,6 +1,6 @@
 const request = async (...args) => {
   const res = await fetch(...args);
-  const json = await res.json();
+  const json = res.json();
 
   return json;
 };

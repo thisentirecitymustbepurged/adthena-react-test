@@ -15,7 +15,7 @@ class TaskTwo extends React.Component {
       <div className="task">
         <h1>Task Two: Todos</h1>
         <div className="content">
-          <Loader async={{ todos: getTodos, users: getUsers }}>
+          <Loader itemsToLoad={{ todos: getTodos, users: getUsers }}>
             <Users />
           </Loader>
         </div>

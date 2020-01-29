@@ -43,7 +43,6 @@
     "prefer-arrow-callback": 2,
     "prefer-spread": 2,
     "prefer-template": 2,
-    "react/prop-types": 0,
     "react/jsx-props-no-spreading": 0,
     "react/no-array-index-key": 0,
     "react/jsx-key": 0,

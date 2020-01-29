@@ -1,10 +1,10 @@
 import React from 'react';
 import './Todo.scss';
 
-const Todos = ({ title }) => (
+const Todo = ({ title }) => (
   <div className="todo">
     {title}
   </div>
 );
 
-export default Todos;
+export default Todo;

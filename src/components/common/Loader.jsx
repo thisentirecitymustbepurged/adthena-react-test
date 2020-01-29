@@ -11,10 +11,10 @@ class Loader extends React.Component {
   }
 
   async load() {
-    const { async } = this.props;
+    const { itemsToLoad } = this.props;
     const results = {};
 
-    await Promise.all(Object.keys(async).map(key => async[key]().then(res => { results[key] = res; })));
+    await Promise.all(Object.keys(itemsToLoad).map(key => itemsToLoad[key]().then(res => { results[key] = res; })));
 
     this.setState({
       results,
