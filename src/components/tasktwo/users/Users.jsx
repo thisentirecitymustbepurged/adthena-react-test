@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import PropTypes from 'prop-types';
 import User from './user';
 import './Users.scss';
 
@@ -28,6 +29,17 @@ const Users = ({ users, todos }) => {
       {usersWithTodos.map(user => <User {...{ ...user, key: user.id }} />)}
     </div>
   );
+};
+
+
+Users.propTypes = {
+  users: PropTypes.array,
+  todos: PropTypes.array,
+};
+
+Users.defaultProps = {
+  users: [],
+  todos: [],
 };
 
 export default Users;

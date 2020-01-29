@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './User.scss';
+import PropTypes from 'prop-types';
 import Todos from '@components/tasktwo/todos';
+import './User.scss';
 
-const Users = ({ username, email, website, todos }) => {
+const User = ({ username, email, website, todos }) => {
   const [collapsed, setCollapsed] = useState(true);
   const collapsedClassname = collapsed ? 'collapsed' : '';
   const className = `user ${collapsedClassname}`;
@@ -24,4 +25,11 @@ const Users = ({ username, email, website, todos }) => {
   );
 };
 
-export default Users;
+User.propTypes = {
+  username: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
+  todos: PropTypes.array.isRequired,
+};
+
+export default User;

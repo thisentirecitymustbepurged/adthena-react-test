@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './Todo.scss';
 
 const Todo = ({ title }) => (
@@ -6,5 +8,10 @@ const Todo = ({ title }) => (
     {title}
   </div>
 );
+
+
+Todo.propTypes = {
+  title: PropTypes.string.isRequired
+};
 
 export default Todo;

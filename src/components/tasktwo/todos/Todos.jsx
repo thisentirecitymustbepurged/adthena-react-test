@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Todo from './todo';
 import './Todos.scss';
 
@@ -29,6 +30,10 @@ const Todos = ({ todos }) => {
       </div>
     </div>
   );
+};
+
+Todos.propTypes = {
+  todos: PropTypes.array.isRequired
 };
 
 export default Todos;

@@ -1,4 +1,5 @@
 import React, { cloneElement } from 'react';
+import PropTypes from 'prop-types';
 
 class Loader extends React.Component {
   state = {
@@ -14,7 +15,11 @@ class Loader extends React.Component {
     const { itemsToLoad } = this.props;
     const results = {};
 
-    await Promise.all(Object.keys(itemsToLoad).map(key => itemsToLoad[key]().then(res => { results[key] = res; })));
+    await Promise.all(
+      Object.keys(itemsToLoad).map(
+        key => itemsToLoad[key]().then(res => { results[key] = res; })
+      )
+    );
 
     this.setState({
       results,
@@ -25,11 +30,20 @@ class Loader extends React.Component {
   render() {
     const { loading, results } = this.state;
     let { children } = this.props;
-    children = cloneElement(children, { ...results });
+    children = children && cloneElement(children, { ...results });
 
 
     return loading ? <div>Loading...</div> : children;
   }
 }
+
+Loader.propTypes = {
+  itemsToLoad: PropTypes.object.isRequired,
+  children: PropTypes.element
+};
+
+Loader.defaultProps = {
+  children: null
+};
 
 export default Loader;

@@ -1,15 +1,1 @@
-const request = async (...args) => {
-  const res = await fetch(...args);
-  const json = res.json();
-
-  return json;
-};
-
-const api = {
-  getUsers: () => request('https://jsonplaceholder.typicode.com/users'),
-  getTodos: () => request('https://jsonplaceholder.typicode.com/todos')
-};
-
-window.api = api;
-
-export default api;
+export { default } from './api';
