@@ -13,6 +13,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(sa|sc|c)ss$': 'identity-obj-proxy',
     '@(components|services)/(.*)$': '<rootDir>/src/$1/$2',
+    '@(testUtils)/(.*)$': '<rootDir>/src/$1/$2',
   },
   testPathIgnorePatterns: [
     '/node_modules/',
@@ -20,4 +21,5 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx|es6)?$': 'babel-jest',
   },
+    setupFilesAfterEnv: ['<rootDir>src/setupTests.js']
 };
