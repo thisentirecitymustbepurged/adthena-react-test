@@ -18,7 +18,10 @@ exports[`Task two component should match snapshot 1`] = `
         }
       }
     >
-      <Users />
+      <Users
+        todos={Array []}
+        users={Array []}
+      />
     </Loader>
   </div>
 </div>
