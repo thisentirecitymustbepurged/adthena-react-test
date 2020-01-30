@@ -10,6 +10,4 @@ const api = {
   getTodos: () => request('https://jsonplaceholder.typicode.com/todos')
 };
 
-window.api = api;
-
 export default api;
