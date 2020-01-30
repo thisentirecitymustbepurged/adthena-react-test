@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User component should match snapshot 1`] = `
+<div
+  className="users"
+>
+  <div
+    className="users__header"
+  >
+    <span>
+      Click on a user to toggle visibility of todos
+    </span>
+  </div>
+  <User
+    address={
+      Object {
+        "city": "Gwenborough",
+        "geo": Object {
+          "lat": "-37.3159",
+          "lng": "81.1496",
+        },
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "zipcode": "92998-3874",
+      }
+    }
+    company={
+      Object {
+        "bs": "harness real-time e-markets",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "name": "Romaguera-Crona",
+      }
+    }
+    email="Sincere@april.biz"
+    id={1}
+    key="1"
+    name="Leanne Graham"
+    phone="1-770-736-8031 x56442"
+    todos={
+      Array [
+        Object {
+          "completed": false,
+          "id": 1,
+          "title": "delectus aut autem",
+          "userId": 1,
+        },
+        Object {
+          "completed": false,
+          "id": 2,
+          "title": "et officia qui",
+          "userId": 1,
+        },
+      ]
+    }
+    username="Bret"
+    website="hildegard.org"
+  />
+  <User
+    address={
+      Object {
+        "city": "Wisokyburgh",
+        "geo": Object {
+          "lat": "-43.9509",
+          "lng": "-34.4618",
+        },
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "zipcode": "90566-7771",
+      }
+    }
+    company={
+      Object {
+        "bs": "synergize scalable supply-chains",
+        "catchPhrase": "Proactive didactic contingency",
+        "name": "Deckow-Crist",
+      }
+    }
+    email="Shanna@melissa.tv"
+    id={2}
+    key="2"
+    name="Ervin Howell"
+    phone="010-692-6593 x09125"
+    todos={
+      Array [
+        Object {
+          "completed": false,
+          "id": 28,
+          "title": "nesciunt totam sit blanditiis sit",
+          "userId": 2,
+        },
+        Object {
+          "completed": false,
+          "id": 29,
+          "title": "laborum aut in quam",
+          "userId": 2,
+        },
+        Object {
+          "completed": true,
+          "id": 30,
+          "title": "nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis",
+          "userId": 2,
+        },
+      ]
+    }
+    username="Antonette"
+    website="anastasia.net"
+  />
+</div>
+`;
