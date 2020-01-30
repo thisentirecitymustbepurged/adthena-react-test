@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task two component should match snapshot 1`] = `
+<div
+  className="task"
+>
+  <h1>
+    Task Two: Todos
+  </h1>
+  <div
+    className="content"
+  >
+    <Loader
+      itemsToLoad={
+        Object {
+          "todos": [Function],
+          "users": [Function],
+        }
+      }
+    >
+      <Users
+        todos={Array []}
+        users={Array []}
+      />
+    </Loader>
+  </div>
+</div>
+`;
