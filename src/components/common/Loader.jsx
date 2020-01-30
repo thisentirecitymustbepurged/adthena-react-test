@@ -32,7 +32,6 @@ class Loader extends React.Component {
     let { children } = this.props;
     children = children && cloneElement(children, { ...results });
 
-
     return loading ? <div>Loading...</div> : children;
   }
 }
